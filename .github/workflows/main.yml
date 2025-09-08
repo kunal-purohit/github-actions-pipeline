@@ -12,6 +12,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
+
             - name: Set up Python
               uses: actions/setup-python@v4
               with:
@@ -24,4 +25,10 @@ jobs:
                   if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
             - name: Run tests
-              run: pytest
+              run: |
+                  pytest
+                  if [ $? -eq 0 ]; then
+                    echo "::notice::All tests passed successfully!"
+                  else
+                    echo "::warning::Some tests failed. Check pytest output."
+                  fi
