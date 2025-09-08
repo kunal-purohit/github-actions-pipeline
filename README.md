@@ -1,6 +1,6 @@
 # GitHub Actions Pipeline Assignment
 
-![Python CI](https://github.com/kunal-purohit/github-actions-pipeline/actions/workflows/main.yml/badge.svg)
+![Python App CI](https://github.com/kunal-purohit/github-actions-pipeline/actions/workflows/main.yml/badge.svg)
 
 This repository demonstrates a Python project with automated testing using GitHub Actions.
 
@@ -24,3 +24,12 @@ We have set up a GitHub Actions workflow that automatically runs tests on every 
     2. Set up Python 3.x environment with pip caching enabled.
     3. Install dependencies from `requirements.txt`.
     4. Run all tests using `pytest`.
+
+## Contribute to the Repository
+
+1. **Fork the repository**
+
+2. **Create a branch**
+    ```bash
+    git checkout -b feature/your-feature
+    ```
